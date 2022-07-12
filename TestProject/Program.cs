@@ -93,9 +93,15 @@ namespace TestProject
             Console.WriteLine();
             Console.WriteLine();
 
-            Helpers.Sorting.Bubble_Sort(ref _array2);
+            //Helpers.Sorting.Bubble_Sort(ref _array2);
 
-            foreach (int item in _array2) Console.Write($"{item} "); 
+            foreach (Object it in _array2.OrderBy(n => n))
+            {
+                Console.Write($"{it} ");
+            }
+
+
+            //foreach (int item in _array2) Console.Write($"{item} "); 
             Console.WriteLine();
             Console.WriteLine();
 
