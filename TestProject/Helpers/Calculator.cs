@@ -19,7 +19,6 @@ namespace TestProject.Helpers
             if (n2 == 0) throw new DivideByZeroException("Ошибка деления на 0!");
 
             return n1 / n2;
-
         }
 
     }
