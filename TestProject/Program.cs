@@ -10,7 +10,7 @@ namespace TestProject
     {
         static void Main(string[] args)
         {
-            //кортеж
+            //кортеж и операции с ним
 
             int n1 = 5;
             int n2 = 7;
@@ -19,7 +19,10 @@ namespace TestProject
             (n1, n2) = (n2, n1);
             Console.WriteLine($"n1 = {n1}, n2 = {n2}");
 
-            //кортеж
+            (int, int) result = Helpers.OtherHelpers.Calc_Sum_Count(new List<int>(new int[] { 1, 2, 3}));
+            Console.WriteLine($"sum = {result.Item1}, count = {result.Item2}");
+
+            //кортеж и операции с ним
 
 
 
