@@ -12,5 +12,19 @@ namespace TestProject.Helpers
         {
             return (_list.Sum(), _list.Count());
         }
+
+        public static int Factorial(int n)
+        {
+            if (n == 1) return 1;
+
+            return n * Factorial(n - 1);
+        }
+
+        public enum types
+        {
+            first,
+            second,
+            third
+        }
     }
 }
