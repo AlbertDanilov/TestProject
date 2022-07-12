@@ -53,6 +53,7 @@
     <Compile Include="Entities\Person.cs" />
     <Compile Include="Helpers\Calculator.cs" />
     <Compile Include="Helpers\OtherHelpers.cs" />
+    <Compile Include="Helpers\Sorting.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

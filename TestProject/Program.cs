@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -82,6 +83,21 @@ namespace TestProject
             _person2.Value.Name = "Albert";
 
             //Console.WriteLine(_person2.Value.Name);
+
+
+            //Hashtable tbl = new Hashtable();
+
+            int[] _array2 = { 5, 7, 4, 2, 6, 9, 7, 65, 4, 3, 2, 2, 3 };
+
+            foreach (int item in _array2) Console.Write($"{item} ");
+            Console.WriteLine();
+            Console.WriteLine();
+
+            Helpers.Sorting.Bubble_Sort(ref _array2);
+
+            foreach (int item in _array2) Console.Write($"{item} "); 
+            Console.WriteLine();
+            Console.WriteLine();
 
             Console.ReadLine();
         }
