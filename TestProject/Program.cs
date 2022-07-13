@@ -95,11 +95,20 @@ namespace TestProject
 
             //Helpers.Sorting.Bubble_Sort(ref _array2);
 
-            foreach (Object it in _array2.OrderBy(n => n))
-            {
-                Console.Write($"{it} ");
-            }
+            //foreach (Object it in _array2.OrderBy(n => n))
+            //{
+            //    Console.Write($"{it} ");
+            //}
 
+
+            //string rez1 = Helpers.OtherHelpers.StringFunc1();
+
+            //Console.WriteLine(rez1);
+            //Console.WriteLine();
+
+            //string rez2 = Helpers.OtherHelpers.StringFunc2();
+
+            //Console.WriteLine(rez2);
 
             //foreach (int item in _array2) Console.Write($"{item} "); 
             Console.WriteLine();

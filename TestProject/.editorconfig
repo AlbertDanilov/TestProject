@@ -1,0 +1,7 @@
+﻿[*.{cs,vb}]
+
+# IDE0040: Добавьте модификаторы доступности
+dotnet_style_require_accessibility_modifiers = never
+
+# IDE0011: Добавить фигурные скобки
+dotnet_diagnostic.IDE0011.severity = none

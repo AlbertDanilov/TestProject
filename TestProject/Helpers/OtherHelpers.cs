@@ -26,5 +26,31 @@ namespace TestProject.Helpers
             second,
             third
         }
+
+        public static string StringFunc1()
+        {
+            string result = string.Empty;
+
+            for (int i = 0; i < 100000; i++)
+            {
+                result += Guid.NewGuid().ToString();
+            }
+
+            return result;
+        }
+
+        public static string StringFunc2()
+        {
+            string result = string.Empty;
+
+            StringBuilder sb = new StringBuilder();
+
+            for (int i = 0; i < 100000; i++)
+            {
+                sb.Append(Guid.NewGuid().ToString());
+            }
+
+            return sb.ToString();
+        }
     }
 }
