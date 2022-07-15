@@ -31,7 +31,5 @@ namespace TestProject.Helpers
 
             return hset.ToList<T>();
         }
-
-        //3. (list, array) уникальные
     }
 }
