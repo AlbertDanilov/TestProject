@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TestProject.Entities;
+using TestProject.Helpers;
 
 namespace TestProject
 {
@@ -139,6 +140,16 @@ namespace TestProject
 
             persons.Add(new Person("name1", "fam1"));
             persons.Add(new Person("name2", "fam2"));
+            persons.Add(new Person("name2", "fam2"));
+            persons.Add(new Person("name2", "fam2"));
+            persons.Add(new Person("name2", "fam2"));
+            persons.Add(new Person("name2", "fam2"));
+            persons.Add(new Person("name2", "fam2"));
+            persons.Add(new Person("name2", "fam2"));
+            persons.Add(new Person("name2", "fam2"));
+            persons.Add(new Person("name2", "fam2"));
+            persons.Add(new Person("name2", "fam2"));
+            persons.Add(new Person("name2", "fam2"));
             persons.Add(new Person("name3", "fam3"));
 
             List<Person> result_list = (List<Person>)Helpers.Complexity.Algo1(persons);
@@ -146,6 +157,9 @@ namespace TestProject
             int[] source_array = { 1, 2, 4, 6, 8, 9999, 64, 43243, 1, 11, 32345, 65, 7, 6, 734, 3, 4, 313, 0, 0 };
 
             List<int> result_array = (List<int>)Helpers.Complexity.Algo2(source_array);
+
+            List<Person> result_list2 = (List<Person>)Helpers.Complexity.Algo2(persons, new PersonComparer());
+
 
             Console.ReadLine();
         }

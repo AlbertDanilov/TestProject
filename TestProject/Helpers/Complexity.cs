@@ -20,9 +20,9 @@ namespace TestProject.Helpers
             return stack.ToList<T>();
         }
 
-        public static IEnumerable<T> Algo2<T>(IEnumerable<T> source)
+        public static IEnumerable<T> Algo2<T>(IEnumerable<T> source, IEqualityComparer<T> comparer = null)
         {
-            HashSet<T> hset = new HashSet<T>();
+            HashSet<T> hset =  new HashSet<T>(comparer);
 
             foreach (T item in source)
             {

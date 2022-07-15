@@ -60,6 +60,7 @@
     <Compile Include="Helpers\Calculator.cs" />
     <Compile Include="Helpers\Complexity.cs" />
     <Compile Include="Helpers\OtherHelpers.cs" />
+    <Compile Include="Helpers\PersonComparer.cs" />
     <Compile Include="Helpers\Sorting.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
