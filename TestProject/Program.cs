@@ -116,23 +116,34 @@ namespace TestProject
             //Console.WriteLine();
             //Console.WriteLine();
 
-            Person p1 = new Person();
-            Person p2 = new Person();
+            ////Person p1 = new Person();
+            ////Person p2 = new Person();
 
-            int[] ar1 = { 1, 2, 3, 4, 5 };
-            int[] ar2 = { 1, 2, 3, 4, 5 };
+            ////int[] ar1 = { 1, 2, 3, 4, 5 };
+            ////int[] ar2 = { 1, 2, 3, 4, 5 };
 
-            byte[] f1 = File.ReadAllBytes("D:\\#БазыАптеки\\Электронный чек1.pdf");
-            byte[] f2 = File.ReadAllBytes("D:\\#БазыАптеки\\Электронный чек1.pdf");
+            ////byte[] f1 = File.ReadAllBytes("D:\\#БазыАптеки\\Электронный чек1.pdf");
+            ////byte[] f2 = File.ReadAllBytes("D:\\#БазыАптеки\\Электронный чек1.pdf");
 
-            bool IsEqual = false;
+            ////bool IsEqual = false;
 
-            Console.WriteLine($"Before IsEqual = {IsEqual}");
+            ////Console.WriteLine($"Before IsEqual = {IsEqual}");
 
             //IsEqual = System.Data.Linq.Binary.Equals(p1, p2);
-            IsEqual = System.Data.Linq.Binary.Equals(ar1, ar2);
+            //IsEqual = System.Data.Linq.Binary.Equals(ar1, ar2);
 
-            Console.WriteLine($"After IsEqual = {IsEqual}");
+            //Console.WriteLine($"After IsEqual = {IsEqual}");
+
+
+            List<Person> persons = new List<Person>();
+
+            persons.Add(new Person("name1", "fam1"));
+            persons.Add(new Person("name2", "fam2"));
+            persons.Add(new Person("name3", "fam3"));
+
+            List<Person> result_list = (List<Person>)Helpers.Complexity.Algo1(persons);
+
+
 
             Console.ReadLine();
         }
