@@ -17,8 +17,21 @@ namespace TestProject.Helpers
                 stack.Push(item);
             }
 
-             //return stack;
-           return stack.ToList<T>();
+            return stack.ToList<T>();
         }
+
+        public static IEnumerable<T> Algo2<T>(IEnumerable<T> source)
+        {
+            HashSet<T> hset = new HashSet<T>();
+
+            foreach (T item in source)
+            {
+                 hset.Add(item);
+            }
+
+            return hset.ToList<T>();
+        }
+
+        //3. (list, array) уникальные
     }
 }

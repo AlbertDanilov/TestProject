@@ -143,7 +143,9 @@ namespace TestProject
 
             List<Person> result_list = (List<Person>)Helpers.Complexity.Algo1(persons);
 
+            int[] source_array = { 1, 2, 4, 6, 8, 9999, 64, 43243, 1, 11, 32345, 65, 7, 6, 734, 3, 4, 313, 0, 0 };
 
+            List<int> result_array = (List<int>)Helpers.Complexity.Algo2(source_array);
 
             Console.ReadLine();
         }
